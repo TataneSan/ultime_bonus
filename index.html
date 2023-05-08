@@ -10,7 +10,7 @@
 
     <title>Ultime Bonus</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
 
     <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -18,134 +18,185 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1f2122",
+            secondary: "#52343e",
+            third: "#e75e8d",
+            cards: "#242627"
+          }
+        }
+      }
+    }
+  </script>
 
   </head>
 
-<body>
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <ul class="nav">
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+<body class="pt-36">
+    <!-- ***** Header Area Start ***** -->
+    <header class="w-full fixed top-0 left-0 h-fit z-50 bg-secondary shadow-lg">
+        <div class="container mx-auto w-full py-4 px-5 flex items-center justify-between">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="logo" class="w-44">
+            </a>
+            <nav class="w-fit flex items-center gap-3">
+                
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
-
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h6>Bienvenue chez ChoufCasino !</h6>
-                  <h4>Comparez les <em>meilleures</em> offres de casinos !</h4>
+                <div class="flex items-center justify-center p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-third flex md:hidden">
+                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                    </svg>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Banner End ***** -->
 
-          
-
-          <!-- ***** Gaming Library Start ***** -->
-          <div class="gaming-library">
-            <div class="col-lg-12">
-              <div class="heading-section">
-                <h4><em>Les meilleurs</em> sites</h4>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="https://play-lh.googleusercontent.com/ieidHKDS7N8wTTONEt99oZESzm2CuJ5WzjAyeSYHl82oO1xTiqftHBm7LIB0_vWOKfHT" alt="" class="templatemo-item"></li>
-                  <li><h4>Stake</h4></li>
-                  <li><h4>Bonus :</h4><span>20€ sur premier dépôt</span></li>
-                  <li><div class="main-border-button"><a href="https://bit.ly/STAKEbonus20">Visiter</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="https://www.auteurslecteurstheatre.fr/uploads/pictures/celsius-logo.png" alt="" class="templatemo-item"></li>
-                  <li><h4>Celsius</h4></li>
-                  <li><h4>Bonus</h4><span>+100% jusqu’à 300€ + 200% jusqu’à 200€</span></li>
-                  <li><h4>Rakeback</h4><span>Jusqu'à 22%</span></li>
-                  <li><div class="main-border-button"><a href="https://bit.ly/CelsiusBONUS200">Visiter</a></div></li>
-                </ul>
-              </div>
-            </div>
-              <div class="item">
-                <ul>
-                  <li><img src="https://footballwhispers.com/wp-content/uploads/2021/11/Screenshot_2022-09-22_124945-removebg-preview.png" alt="" class="templatemo-item"></li>
-                  <li><h4>Yonibet</h4></li>
-                  <li><h4>Bonus</h4><span>Premier pari remboursé jusqu'à 100€<span></li>
-                  <li><div class="main-border-button"><a href="https://bit.ly/BestBook2022">Visiter</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="https://fier-panda.fr/wp-content/uploads/2020/04/Logo-Casinozer.webp" alt="" class="templatemo-item"></li>
-                  <li><h4>CasinoZer</h4></li>
-                  <li><h4>Bonus</h4><span>100% jusqu'à 500€<span></li>
-                  <li><div class="main-border-button"><a href="https://bit.ly/Casinozerinscription">Visiter</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="https://www.parissportif.org/wp-content/uploads/2021/12/1Win-Logo-Paris-Sportifs.png" alt="" class="templatemo-item"></li>
-                  <li><h4>1win</h4></li>
-                  <li><h4>Bonus</h4><span>500% jusqu'à 800€<span></li>
-                  <li><div class="main-border-button"><a href="https://bit.ly/1winBOOK2023">Visiter</a></div></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            </nav>
         </div>
-      </div>
-    </div>
-  </div>
-  
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2023 <a href="#">Ultime Bonus</a>. All rights reserved. 
-          
-          <br>Design: <a href="https://github.com/TataneSan" target="_blank" title="GitHub">TataneSan</a></p>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="container w-full mx-auto px-5 flex flex-col gap-12">
+        <!-- ***** Banner Start ***** -->
+        <div class="w-full rounded-3xl py-10 md:py-20 px-12 md:px-20 h-80 bg-[url('./assets/images/banner-bg.jpg')] bg-cover bg-no-repeat bg-center flex flex-col gap-2 justify-between">
+            <div class="flex flex-col gap-2">
+                <h1 class="text-4xl text-white font-bold">Bienvenue chez <span class="text-third">UltimeBonus !</span></h1>
+                <h2 class="text-xl text-white font-medium">Comparez les meilleures offres de casinos !</h2>
+            </div>
+           
         </div>
-      </div>
+        <!-- ***** Banner End ***** -->
+
+
+        <!-- ***** Gaming Library Start ***** -->
+        <div class="w-full flex flex-col gap-3">
+            <div class="w-fit">
+                <h2 class="text-2xl text-white font-medium pl-2">Nos meilleurs sites</h2>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="w-full bg-cards py-4 px-8 rounded-3xl">
+                    <div class="flex items-center justify-between w-full">
+                        <div class="w-1/4 flex items-center gap-5">
+                            <img src="https://play-lh.googleusercontent.com/ieidHKDS7N8wTTONEt99oZESzm2CuJ5WzjAyeSYHl82oO1xTiqftHBm7LIB0_vWOKfHT" alt="" class="w-14 h-14 rounded-xl">
+                            <p class="text-lg text-white font-medium">Stake</p>
+                        </div>
+                        <div class="w-1/4 flex items-start gap-2 hidden md:flex">
+                            <p class="text-amber-400">Bonus:</p>
+                            <span class="text-white">20€ sur premier dépôt</span>
+                        </div>
+                        <div class="w-1/4 hidden md:flex">
+
+                        </div>
+                        <div class="w-fit flex justify-end">
+                            <a href="https://bit.ly/STAKEbonus20" class="bg-third rounded-full px-6 py-3 w-fit cursor-pointer hover:brightness-110 transition-all active:scale-95">
+                                <p class="text-white">J'en profite !</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <div class="w-full bg-cards py-4 px-8 rounded-3xl">
+                    <div class="flex items-center justify-between w-full">
+                        <div class="w-1/4 flex items-center gap-5">
+                            <img src="https://casinobee.com/wp-content/uploads/2022/02/celsius-casino-logo.png" alt="" class="w-14 h-14 rounded-xl">
+                            <p class="text-lg text-white font-medium">Celsius</p>
+                        </div>
+                        <div class="w-1/4 items-start gap-2 hidden md:flex">
+                            <p class="text-amber-400">Bonus:</p>
+                            <span class="text-white">+100% jusqu’à 300€ + 200% jusqu’à 200€</span>
+                        </div>
+                        <div class="w-1/4 justify-center hidden md:flex">
+                            <p class="text-white w-fit">Rakeback: <span class="text-stone-400">Jusqu'à 22%</span></p>
+                        </div>
+                        <div class="w-fit flex justify-end">
+                            <a href="https://bit.ly/CelsiusBONUS200" class="bg-third rounded-full px-6 py-3 w-fit cursor-pointer hover:brightness-110 transition-all active:scale-95">
+                                <p class="text-white">J'en profite !</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full bg-cards py-4 px-8 rounded-3xl">
+                    <div class="flex items-center justify-between w-full">
+                        <div class="w-1/4 flex items-center gap-5">
+                            <img src="https://www.parissportifquebec.ca/img/site/~120/120/yonibet-canada-4.png.jpg" alt="" class="w-14 h-14 rounded-xl">
+                            <p class="text-lg text-white font-medium">Yonibet</p>
+                        </div>
+                        <div class="w-1/4 flex items-start gap-2 hidden md:flex">
+                            <p class="text-amber-400">Bonus:</p>
+                            <span class="text-white">Premier pari remboursé jusqu'à 100€</span>
+                        </div>
+                        <div class="w-1/4 justify-center hidden md:flex">
+                        </div>
+                        <div class="w-fit flex justify-end">
+                            <a href="https://bit.ly/BestBook2022" class="bg-third rounded-full px-6 py-3 w-fit cursor-pointer hover:brightness-110 transition-all active:scale-95">
+                                <p class="text-white">J'en profite !</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full bg-cards py-4 px-8 rounded-3xl">
+                    <div class="flex items-center justify-between w-full">
+                        <div class="w-1/4 flex items-center gap-5">
+                            <img src="https://fier-panda.fr/wp-content/uploads/2020/04/Logo-Casinozer.webp" alt="" class="w-14 h-14 rounded-xl">
+                            <p class="text-lg text-white font-medium">CasinoZer</p>
+                        </div>
+                        <div class="w-1/4 items-start gap-2 hidden md:flex">
+                            <p class="text-amber-400">Bonus:</p>
+                            <span class="text-white">100% jusqu'à 500€</span>
+                        </div>
+                        <div class="w-1/4 justify-center hidden md:flex">
+                        </div>
+                        <div class="w-fit flex justify-end">
+                            <a href="https://bit.ly/Casinozerinscription" class="bg-third rounded-full px-6 py-3 w-fit cursor-pointer hover:brightness-110 transition-all active:scale-95">
+                                <p class="text-white">J'en profite !</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full bg-cards py-4 px-8 rounded-3xl">
+                    <div class="flex items-center justify-between w-full">
+                        <div class="w-1/4 flex items-center gap-5">
+                            <img src="https://www.parissportif.org/wp-content/uploads/2021/12/1Win-Logo-Paris-Sportifs.png" alt="" class="w-14 h-14 rounded-xl">
+                            <p class="text-lg text-white font-medium">1win</p>
+                        </div>
+                        <div class="w-1/4 items-start gap-2 hidden md:flex">
+                            <p class="text-amber-400">Bonus:</p>
+                            <span class="text-white">500% jusqu'à 800€</span>
+                        </div>
+                        <div class="w-1/4 justify-center hidden md:flex">
+                        </div>
+                        <div class="w-fit flex justify-end">
+                            <a href="https://bit.ly/1winBOOK2023n" class="bg-third rounded-full px-6 py-3 w-fit cursor-pointer hover:brightness-110 transition-all active:scale-95">
+                                <p class="text-white">J'en profite !</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </footer>
+
+    <footer class="container w-full mx-auto flex items-center justify-center py-10">
+        <div class="flex flex-col">
+            <p class="text-white">Copyright © 2023 <a href="#">Ultime Bonus</a>. All rights reserved.</p>
+            <p class="text-stone-400">Design: <a href="https://github.com/TataneSan" target="_blank" title="GitHub">TataneSan</a> and <a href="https://github.com/alexandre-vl" target="_blank" title="GitHub">Alexandre VARGAS LOPEZ</a></p>
+        </div>
+    </footer>
 
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+<!--     <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
 
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+<!--     <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/popup.js"></script> -->
+<!--     <script src="assets/js/custom.js"></script> -->
 
 
-  </body>
+    </body>
 
 </html>
